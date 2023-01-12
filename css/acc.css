@@ -1,0 +1,51 @@
+body{
+  background-color: rgb(23, 23, 23);
+  color: white;
+}
+h1 {
+    color: white;
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:300%;
+  }
+a{
+  text-decoration: underline;
+  color: white;
+}
+
+.box{
+  width: 30%;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  padding: 50px;
+  margin: auto;
+  margin-top: 60px;
+  height: 380px;
+}
+input{
+  width: 100%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type="submit"]:hover{
+  background-color: rgba(23, 23, 23, 0.5);
+  transition: 0.1s ease-in;
+  cursor: pointer;
+}
+input[type="submit"]:hover::before{
+  width: 100%
+}
+
+label:hover{
+  color: rgba(255, 255, 255, 0.8);
+  cursor:text;
+}
+#back{
+  color: white;
+  background-color: transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-decoration: none;
+}

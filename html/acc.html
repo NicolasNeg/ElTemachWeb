@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/acc.css">
+    <script src="../js/acc.js"></script>
+    <title>War Mode / Account</title>
+</head>
+<body>
+    <a href="../html/index.html" id="back">
+        <<
+    </a>
+    <!---Caja--->
+    <div class="box">
+        <h1>
+            Login
+        </h1>
+        <form action="../php/login.php">
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" placeholder="Juan"><br>
+            <label for="password">Contraseña:</label><br>
+            <input type="password" id="password" name="password" placeholder="jU4nManr1Que5"><br><br>
+            <input type="submit" id="submit" value="Iniciar sesion">
+            <p onmouseenter="ShowInfo()">No tienes cuenta?</p>
+            <div id="div">
+                <p>Haz <a href="registro.html">Click aqui</a> para registrarte</p>
+            </div>
+          </form> 
+    </div>
+    <script>
+        var x = document.getElementById("div"); // marca <div>
+        x.style.display = "none";
+
+        function ShowInfo(){
+    var x = document.getElementById("div");
+    x.style.display = "block";
+}
+    </script>
+</body>
+</html>

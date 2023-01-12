@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/registro.css">
+    <script src="../js/registro.js"></script>
+    <title>War Mode / Nuevo compa</title>
+</head>
+<body>
+    <a href="../html/index.html" id="back">
+        <<
+    </a>
+    <!---Caja--->
+    <div class="box">
+        <h1>
+            Registro
+        </h1>
+        <form action="../php/registro.php">
+            <label for="name">Su Nombre:</label><br>
+            <input type="text" id="name" name="name" placeholder="Juanito"><br>
+            <label for="mail">Correo:</label><br>
+            <input type="email" id="lname" name="lname" placeholder="juanitopro@gmail.com"><br><br>
+            <label for="password">Contraseña:</label><br>
+            <input type="password" id="password" name="password" placeholder="juanitopro1234"><br><br>
+            <input type="submit" value="Registrarme">
+            <p onmouseenter="ShowInfo()">Ya tienes una cuenta?</p>
+            <div id="div">
+                <p>Haz <a href="acc.html">Click aqui</a> para inciar sesion</p>
+            </div>
+          </form>
+    </div>
+    <script>
+        var x = document.getElementById("div"); // marca <div>
+        x.style.display = "none";
+
+        function ShowInfo(){
+    var x = document.getElementById("div");
+    x.style.display = "block";
+}
+    </script>
+</body>
+</html>
